@@ -144,7 +144,7 @@ export const deleteOrderByIdService = async (req, transaction) => {
       });
       await transaction.commit();
       return {
-        messag: 'Order deleted successfully',
+        message: 'Order deleted successfully',
         data: {
           order_id: order.id
         }
