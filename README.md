@@ -1,24 +1,19 @@
-# Node layer architecture
+Steps to run application locally: 
+1. Run command 'npm install'
+2. Create database named 'online_retailer'
+3. Run 'npm start'
 
-Create a simple nodejs layer architecture project initial setup
+Api endpoints: 
+host: https://online-retailer.onrender.com (live)
+      http://localhost:3001 (local)
 
-# Install
-
-```sh
-git clone https://github.com/uzzal71/node-layer-architecture.git
-cd node-layer-architecture
-npm install
-```
-
-# Environment
-
-Copy example.env file, rename .env & change all configuration variables
-
-# Migrations
-
-```sh
-# create a migration file with terminal
-npx migrate-mongo create create_category_table
-# run the migration files
-npx migrate-mongo up
-```
+1. Order place: {host}/api/order
+     method: POST
+2. Order update: {host}/api/order/:id
+    method: PUT
+3. Order status update: {host}/api/order/:id
+    method: PATCH
+4. Order delete: {host}/api/order/:id
+    method: DELETE
+5. Order get: {host}/api/order/:id
+    method: GET
